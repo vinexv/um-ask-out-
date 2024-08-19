@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .button.disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .button.disabled:hover {
+            background: #6c757d;
+        }
+        #responseMessage {
+            display: none;
+            font-size: 1.2em;
+            color: #28a745;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PLEASE GO ON A DATE WITH ME, PLEASE</h1>
+        <p class="message">date par chal le please, sorry</p>
+        <button class="button" id="yesButton" onclick="handleYes()">Yes</button>
+        <button class="button disabled" id="noButton" disabled>No</button>
+        <div id="responseMessage">i knew tu merko mana nahi karegi, so kal 1 baje se you decide where and also also i am very very sorry for yesterday, like very sorry, sorry, okay bye have a nice day, and you are pretty </div>
+    </div>
+
+    <script>
+        function handleYes() {
+            document.getElementById('responseMessage').style.display = 'block';
+            // Optionally, send a response to a server or handle further logic
+            // For example:
+            // fetch('/submit', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            //     body: new URLSearchParams({ response: 'yes' })
+            // });
+        }
+    </script>
+</body>
+</html>
